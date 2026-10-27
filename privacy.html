@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy policy — gdirect Personal Drive</title>
+<style>body{max-width:760px;margin:64px auto;padding:0 24px;font:17px/1.7 system-ui;color:#202124}h1,h2{line-height:1.25}a{color:#1659b7}</style>
+<nav><a href="./">Home</a> · <a href="terms.html">Terms of use</a></nav>
+<h1>Privacy policy</h1><p>gdirect Personal Drive · maintained by WfrRadio · effective October 27, 2026.</p>
+<h2>Data accessed and its purpose</h2>
+<p>This personal desktop configuration accesses the Google account identifier and Google Drive file metadata and contents necessary for the owner's requested browsing, downloads, uploads, editing and filesystem mount operations. The full Drive scope permits access to existing files and changes requested by the owner. No advertising, profiling or AI model training is performed by this configuration.</p>
+<h2>Local storage and retention</h2>
+<p>OAuth client information, access and refresh tokens, folder metadata, transfer state and mount caches are stored locally by gdirect and rclone. Credentials are stored with restrictive file permissions. Cached files or pending uploads may remain after unmounting. This static website has no application backend and does not receive these credentials, metadata or file contents.</p>
+<h2>Sharing and network transport</h2>
+<p>The desktop application sends requests and user-selected file data to Google Drive. This installation routes its mount connections through the third-party TCP relay 183.56.143.147 while retaining end-to-end HTTPS and certificate verification. The relay operator can observe the connecting IP address, timing, traffic volume and possibly Google hostnames. The configuration does not intentionally disclose plaintext tokens or file contents to the relay, and its operator's independent metadata retention is not controlled by WfrRadio.</p>
+<p>Google processes data under its own policies. GitHub hosts this static site and may process ordinary website access logs under its own privacy policy. No additional analytics or tracking scripts are installed on this site. Google user data is not sold, used for advertising or shared with data brokers.</p>
+<h2>Google API Limited Use</h2>
+<p>gdirect Personal Drive's use and transfer of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+<h2>Control and deletion</h2>
+<p>The owner can stop the mount, sign out with gdirect, and revoke access in <a href="https://myaccount.google.com/permissions">Google Account permissions</a>. Revoking authorization stops future authorized access but does not remove files already downloaded or cached locally. The owner can remove local credentials and cached data when no pending upload needs to be preserved. Cloud files remain in Google Drive unless the owner changes or deletes them.</p>
+<h2>Contact</h2><p>Questions about this configuration may be submitted to <a href="https://github.com/WfrRadio/wfrradio.github.io/issues">WfrRadio's website issue tracker</a>. Do not post credentials, tokens or private file contents in public issues.</p>
+</html>

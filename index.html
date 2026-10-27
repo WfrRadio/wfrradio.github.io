@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>gdirect Personal Drive</title>
+<style>body{max-width:760px;margin:64px auto;padding:0 24px;font:17px/1.7 system-ui;color:#202124}h1,h2{line-height:1.25}a{color:#1659b7}nav{display:flex;gap:24px}footer{margin-top:48px;border-top:1px solid #ddd;padding-top:20px;color:#555}</style>
+<nav><a href="./">Home</a><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of use</a></nav>
+<h1>gdirect Personal Drive</h1>
+<p>A personal desktop configuration maintained by <a href="https://github.com/WfrRadio">WfrRadio</a> for browsing, downloading, uploading and mounting the owner's Google Drive on macOS.</p>
+<p>This is an independently maintained personal configuration of the open-source <a href="https://github.com/mizorewww/gdirect">gdirect project</a>. It is not a Google product and is not operated by gdirect's upstream author.</p>
+<h2>What it does</h2>
+<p>The desktop application signs in through Google's OAuth consent screen. It lets the account owner access existing Drive files and folders, download files, upload local files, and use a local filesystem mount to save changes. This static website provides application information only; it does not sign users in or receive Google credentials.</p>
+<h2>Why Google Drive access is requested</h2>
+<p>The application requests the Google Drive scope (<code>https://www.googleapis.com/auth/drive</code>) to list and read existing files, create and upload files, and edit, rename, move or delete files when the owner performs those actions. It is intended for the owner's personal use, not as a public cloud storage service.</p>
+<h2>Where data goes</h2>
+<p>Credentials and file caches are stored on the owner's computer. Drive requests are sent to Google. The configured network path uses a third-party TCP relay at 183.56.143.147, with HTTPS certificate verification retained. The relay can observe connection metadata but is not given plaintext credentials or file contents by this configuration.</p>
+<p>Read the <a href="privacy.html">privacy policy</a> and <a href="terms.html">terms of use</a> before granting access. Access can be revoked at any time in <a href="https://myaccount.google.com/permissions">Google Account permissions</a>.</p>
+<footer>Maintained by WfrRadio. Contact: <a href="https://github.com/WfrRadio/wfrradio.github.io/issues">website issue tracker</a>. Updated October 27, 2026.</footer>
+</html>
